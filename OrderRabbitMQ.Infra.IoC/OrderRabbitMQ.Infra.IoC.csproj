@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\OrderRabbitMQ.Authorization.Application\OrderRabbitMQ.Order.Application.csproj" />
+	  <ProjectReference Include="..\OrderRabbitMQ.Authorization.Data\OrderRabbitMQ.Order.Data.csproj" />
+	  <ProjectReference Include="..\OrderRabbitMQ.Authorization.Domain\OrderRabbitMQ.Order.Domain.csproj" />
+	  <ProjectReference Include="..\OrderRabbitMQ.Domain.Core\OrderRabbitMQ.Domain.Core.csproj" />
+	  <ProjectReference Include="..\OrderRabbitMQ.Infra.Bus\OrderRabbitMQ.Infra.Bus.csproj" />
+
+	</ItemGroup>
+
+
+</Project>

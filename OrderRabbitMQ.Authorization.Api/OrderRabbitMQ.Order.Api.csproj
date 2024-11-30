@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <!--<ItemGroup>
+    <Compile Remove="Controllers\OrderController.cs" />
+  </ItemGroup>-->
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="7.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrderRabbitMQ.Authorization.Data\OrderRabbitMQ.Order.Data.csproj" />
+    <ProjectReference Include="..\OrderRabbitMQ.Infra.IoC\OrderRabbitMQ.Infra.IoC.csproj" />
+  </ItemGroup>
+
+ 
+</Project>
